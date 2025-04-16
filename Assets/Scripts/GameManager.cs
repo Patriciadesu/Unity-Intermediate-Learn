@@ -28,4 +28,10 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    [ContextMenu("Debug Money")]
+    public void DebugCurrentMoney()
+    {
+        Debug.Log($"Current Money is {_money}");
+    }
+
 }
